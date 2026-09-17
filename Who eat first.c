@@ -5,36 +5,35 @@ void eat(char first, int turn)
     {
         return;
     }
-    if (first == 'H')
+    if (first == 'A')
     {
         if (turn % 2 == 1)
         {
-            printf("Musfiq eats the food\n");
+            printf("Karim eats first\n");
         }
         else
         {
-            printf("Tanvir eats the food\n");
+            printf("ram eats first\n");
         }
     }
-    if (first == 'T')
+    if (first == 'B')
     {
         if (turn % 2 == 1)
         {
-            printf("Tanvir eats the food\n");
+            printf("ram eats first\n");
         }
         else
         {
-            printf("Musfiq eats the food\n");
+            printf("Karim eats first\n");
         }
     }
-
     eat(first, turn + 1);
 }
 
 int main()
 {
     char first;
-    scanf("%c", &first);
+    scanf(" %c", &first);
     eat(first, 1);
     return 0;
 }
